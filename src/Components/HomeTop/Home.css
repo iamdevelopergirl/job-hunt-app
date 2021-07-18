@@ -1,0 +1,25 @@
+.home-container{
+    background: url('../../Assets/laptop.jpeg') no-repeat;
+    width: 100%;
+    height : 500px;
+    background-size: cover;
+    position: relative;
+}
+
+.post-offer-modal{
+    color: aliceblue;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+
+p:nth-child(1){ 
+    font-weight: bold;
+    font-size: 24px;
+}
+
+p:nth-child(2){ 
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: -15px;
+}
