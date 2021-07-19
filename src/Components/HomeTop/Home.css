@@ -1,6 +1,6 @@
 .home-container{
     background: url('../../Assets/laptop.jpeg') no-repeat;
-    width: 100%;
+    max-width: 100%;
     height : 500px;
     background-size: cover;
     position: relative;
@@ -11,6 +11,14 @@
     position: absolute;
     top: 40%;
     left: 20%;
+}
+
+@media screen and (max-width: 850px) {
+    .post-offer-modal {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }   
 }
 
 p:nth-child(1){ 

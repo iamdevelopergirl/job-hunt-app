@@ -16,11 +16,17 @@
 }
 .all-offer-link{
     font-size: 12px;
+    display: flex;
+    margin-left: 10px;
+}
+
+.all-offer-link > svg {
+    margin-left: 10px;
 }
 
 .jobs-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .job-article{
