@@ -5,6 +5,8 @@ import Seperator from '../../Shared/Seperator';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
+import {useState, useEffect} from 'react';
+
 const jobDesc = [
     {
         jobName: "Junior Java Developer", 
@@ -36,11 +38,33 @@ const jobDesc = [
     }
 ]
 
-const Jobs = ({strings}) => {
+function Jobs() {
 
-    let job = jobDesc.map((elem, index) => {
+    const [windowWidth, setwindowWidth] = useState(window.innerWidth);
+    const [removeSeperator, setremoveSeperator] = useState(false);
+
+    const _handleResize = () => {
+        setwindowWidth(window.innerWidth);
+        if(windowWidth > 900){
+            setremoveSeperator(true);
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('resize', _handleResize);
+        jobFunc();
+        return () => {
+            window.removeEventListener('resize', _handleResize);
+        }
+    }, [removeSeperator])
+
+    const jobFunc = () => {
+        let job = jobDesc.map((elem, index) => {
         let seperator;
         if(index !==0 && index%2 === 0){
+            seperator = null;
+        }
+        else if(removeSeperator){
             seperator = null;
         }
         else{
@@ -52,7 +76,9 @@ const Jobs = ({strings}) => {
                 {seperator}
             </div>
         )    
-    });
+        });
+        return job;
+    }
     
     
     return (
@@ -66,7 +92,7 @@ const Jobs = ({strings}) => {
                 </div>
             </div>
             <div className="jobs-container">
-                {job}
+                {jobFunc()}
             </div>
         </section>
     )
