@@ -28,7 +28,7 @@ const jobDesc = [
     {
         jobName: "Junior Project Manager", 
         date: "1 day ago", 
-        companyName: "Frontkom",
+        companyName: "PickSaaS",
         place: "Lublin, Polksa", 
         description: "I am currently looking for a Java developer. Project \
         for public sector. Location: Wroclaw (during the pandemic, remote work) \
@@ -40,7 +40,7 @@ const Jobs = ({strings}) => {
 
     let job = jobDesc.map((elem, index) => {
         let seperator;
-        if(index === 2){
+        if(index !==0 && index%2 === 0){
             seperator = null;
         }
         else{

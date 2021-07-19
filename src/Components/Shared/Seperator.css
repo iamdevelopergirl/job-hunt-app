@@ -4,3 +4,9 @@
     background-color: grey;
     margin-right: 20px;
 }
+
+@media screen and (max-width: 849px) {
+    .seperator {
+        display:none
+    }   
+}

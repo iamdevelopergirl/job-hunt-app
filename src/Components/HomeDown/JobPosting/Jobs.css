@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 20px;
+    height: 30%;
     justify-content: space-between;
 }
 .all-job-offer-link-container{
