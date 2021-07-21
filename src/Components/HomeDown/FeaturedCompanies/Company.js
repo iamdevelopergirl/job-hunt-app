@@ -1,11 +1,10 @@
 import './FeaturedCompanies.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSuitcase } from '@fortawesome/free-solid-svg-icons';
+import icon_briefcase from '../../../Assets/icon_briefcase.svg';
 
 const Company = ({logo, name}) => (
     <section className="company-container">
         <div className="company-logo">
-            <FontAwesomeIcon icon={faSuitcase} className="suitcase"/> 
+            <img className="suitcase" src={icon_briefcase} alt="React Logo" />
         </div>
         <div className="company-name">
             {name}

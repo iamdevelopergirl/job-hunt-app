@@ -1,7 +1,7 @@
 .home-container{
-    background: url('../../Assets/laptop.jpeg') no-repeat;
+    background: url('../../Assets/header-image.png') no-repeat;
     max-width: 100%;
-    height : 500px;
+    min-height : 540px;
     background-size: cover;
     position: relative;
 }
@@ -9,25 +9,21 @@
 .post-offer-modal{
     color: aliceblue;
     position: absolute;
-    top: 40%;
-    left: 20%;
-}
-
-@media screen and (max-width: 850px) {
-    .post-offer-modal {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }   
+    top: 34%;
+    left: 9%;
+    text-align: left;
 }
 
 p:nth-child(1){ 
-    font-weight: bold;
-    font-size: 24px;
+    font: normal normal 500 48px/68px Manrope-Medium;
+    margin: auto;
 }
 
 p:nth-child(2){ 
-    font-weight: bold;
-    font-size: 14px;
-    margin-top: -15px;
+    font: normal normal 500 20px/29px Manrope-Medium;
+    margin: auto;
+}
+
+.margin-top-27 {
+    margin-top: 27px;
 }

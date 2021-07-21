@@ -8,7 +8,7 @@ const PostOffer = () => (
         <p>
             Hire and invest in highly skilled juniors now.
         </p>
-        <Button className="blue" name="Post Offer now"/>
+        <Button className="blue margin-top-27 large" name="Post Offer now"/>
     </div>
 )
 

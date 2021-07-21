@@ -2,22 +2,27 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start; 
+    max-width: 100%;
 }
 
 .heading-container{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 30%;
+    max-height: 30%;
     justify-content: space-between;
+    align-items: center;
 }
+
 .all-job-offer-link-container{
-    flex-grow: 1;
+    text-align: right;
 }
+
 .all-offer-link{
-    font-size: 12px;
+    font: normal normal bold 18px/24px Manrope-Bold;
+    letter-spacing: 0px;
+    color: #276FFB;
+    height: 24px;
     display: flex;
-    margin-left: 10px;
 }
 
 .all-offer-link > svg {
@@ -30,31 +35,48 @@
 }
 
 .job-article{
-    max-width: 80%;
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .job-heading{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    letter-spacing: 0px;
+    align-items: center;
+    min-height: 32px;
+}
+
+div.job-heading > span:nth-child(1){
+    font: normal normal bold 24px/32px Manrope-Bold;
+    color: #276FFB;
+    opacity: 1;
+}
+
+div.job-heading > span:nth-child(2){
+    font: normal normal 500 18px/24px Manrope-Medium;
+    color: #141414;
+    opacity: 0.6;
 }
 
 .job-place{
     align-self: baseline;
-    padding: 6px 0;
-    font-size: 14px;
+    font: normal normal 500 20px/27px Manrope-Medium;
+    letter-spacing: 0px;
+    color: #141414;
+    
 }
 
 div.job-place > span:nth-child(1){
-    color: black;
+    text-align: left;
+    opacity: 1;
 }
 
 div.job-place > span:nth-child(2){
-    padding-left: 20px;
+    padding-left: 21px;
+    opacity: 0.6;
 }
 
 .job-desc{
@@ -62,17 +84,22 @@ div.job-place > span:nth-child(2){
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font: normal normal 500 20px/27px Manrope-Medium;
+    letter-spacing: 0px;
+    color: #141414;
+    padding-top: 28px;
 }
 
 .job-desc > span{
-    line-height: 1.6;
+    opacity: 0.6;
+    max-width: 90%;
 }
 
 .jobs--container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 36px 0 71px 0;
 }
 
 .auto-height{
@@ -80,7 +107,5 @@ div.job-place > span:nth-child(2){
 }
 
 .small{
-    width: 1%;
-    height: 50%;
     align-self: flex-end;
 }

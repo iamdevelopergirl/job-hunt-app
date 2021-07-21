@@ -22,8 +22,8 @@ const jobDesc = [
         date: "3 hours ago", 
         companyName: "Frontkom",
         place: "Lublin, Polska", 
-        description: "Join us in the Lublin office to build innovative long- \
-        term projects. Exciting international clients and \
+        description: "Join us in the Lublin office to build innovative long-term \
+        projects. Exciting international clients and \
         partners and a work environment focussed on \
         learning and growth awaits you!"
     },
@@ -57,14 +57,11 @@ function Jobs() {
             window.removeEventListener('resize', _handleResize);
         }
     }, [removeSeperator])
-
+    
     const jobFunc = () => {
         let job = jobDesc.map((elem, index) => {
         let seperator;
         if(index !==0 && index%2 === 0){
-            seperator = null;
-        }
-        else if(removeSeperator){
             seperator = null;
         }
         else{
@@ -88,7 +85,7 @@ function Jobs() {
                     Newest Job Offers
                 </div>
                 <div className="all-job-offer-link-container">
-                    <a className="all-offer-link" href="https://github.com/iamdevelopergirl" target="_blank" rel="noopener noreferrer">View all job offers {<FontAwesomeIcon icon={faArrowRight}/>}</a>
+                    <a className="all-offer-link" href="https://github.com/iamdevelopergirl" target="_blank" rel="noopener noreferrer">View all job offers ➜</a>
                 </div>
             </div>
             <div className="jobs-container">

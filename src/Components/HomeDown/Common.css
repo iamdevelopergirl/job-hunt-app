@@ -1,6 +1,6 @@
 .home-down-title{
-    font-size: 24px;
-    color: black;
-    font-weight: bold;
-    flex-grow: 11;
+    font: normal normal bold 48px/64px Manrope-Bold;
+    color: #141414;
+    opacity: 1;
+    min-height: 64px;
 }
